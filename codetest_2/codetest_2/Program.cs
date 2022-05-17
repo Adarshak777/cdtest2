@@ -12,7 +12,7 @@ namespace codetest_2
 
         class TestDelegate
         {
-            static int num = 10;
+            
 
             public static int Addition(int a, int b)
             {
