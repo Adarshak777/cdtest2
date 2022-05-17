@@ -1,0 +1,89 @@
+double  p, r , interest , total_amount;
+            int  t;
+
+            Console.WriteLine(" Enter loan amount  = ");
+            p = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(" Enter interest % per annum  = ");
+            r = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(" Enter number of years ");
+            t = Convert.ToInt32(Console.ReadLine());
+
+            interest = p * t * r / 100;
+            total_amount = p + interest;
+            Console.WriteLine(" total amount :  {0} ", total_amount);
+            Console.ReadLine();
+
+
+
+namespace VYSHNAVIPTC
+{
+   /* internal class Program
+    {
+        public class Fruits
+        {
+            string name;
+            string color;
+
+            public Fruits(string name, string color)
+            {
+                this.name = name;
+                this.color = color;
+            }
+
+            public void Display()
+            {
+                Console.WriteLine($"{name} is {color} in color");
+            }
+        }
+
+        class Fruitbox
+        {
+            Fruits[] fobj = new Fruits[5]; 
+            public Fruits this[int pos]
+            {
+                get { return fobj[pos]; }
+                set { fobj[pos] = value; }
+            }
+
+            static void Main()
+            {
+                Fruitbox fv = new Fruitbox();
+                fv[0] = new Fruits("Apple", "Red");
+                fv[1] = new Fruits("GUAVA", "Green");
+                fv[2] = new Fruits("Strawberry", "Pink");
+                fv[3] = new Fruits("Banana", "Yellow");
+                for (int i = 0; i < 3; i++)
+                {
+                    fv[i].Display();
+                }
+                Console.Read();
+
+
+
+            SOLID DESIGN PINCIPLES:-
+1. S - Single responsibility principle 
+2. o;- open closed priciple :- open for extension and close for modification.
+3.L;- liskov substitution priciple
+4.i:- interface segregatin principle
+5 d;- dependency inversion principle
+
+unit testing :- 
+1. Create a class library application. Call it as MainProject. 
+2. Change the class name from class1 to Accounts
+3. Write all the methods required as per the demo
+4. Build it. It will create a .dll namespace
+ 
+1. Now create another class library project (within the same solution or different VS application)
+2. give the name of the project as Testing_MainProject
+3. Go to tools and select nuget packaage -> manage nuget for solutions
+4. in Browse type nunit.
+5. Add NUnit Adapter and NUnit to the Testing_MainProject by clicking install
+6. Then change the class name from class1 to T
+7. Then add the test methods as per the demo
+8. Go to the Test menu option and select testExplorer (this will open the window for testing)
+9. Run the test methods and see the output. 
+ 
+10. You can cheange or write new methods to test
+
+
+delegates
