@@ -13,7 +13,7 @@ namespace codetest_2
         class TestDelegate
         {
             
-
+              static int num = 10;
             public static int Addition(int a, int b)
             {
                 num = a+b;
@@ -45,7 +45,7 @@ namespace codetest_2
                    Console.WriteLine("addition value is {0} ", getNum());
                    ak2(2,4);
                    Console.WriteLine("substraction value is {0} ", getNum());
-                   ak2(12,2);
+                   ak2(5,2);
                    Console.WriteLine("multiplication value is {0} ", getNum());
                    Console.ReadKey();
             }
